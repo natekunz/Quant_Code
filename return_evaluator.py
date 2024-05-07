@@ -240,5 +240,5 @@ class strat_evaluator:
         model = sm.OLS(returns * 100, X)
         results = model.fit()
         
-        # return alpha beta
+        # Return alpha beta
         return {'alpha': results.params[0], 'beta': results.params[1]}
